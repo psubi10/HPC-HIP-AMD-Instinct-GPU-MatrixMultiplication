@@ -25,13 +25,18 @@ This project demonstrates **GPU acceleration for matrix multiplication** using *
 - **HIP enables high-performance parallel computing** on AMD hardware.
 
 ## 🔹 Getting Started (Run the Code)
+**How to compile and run the CPU version **
+g++ matrix_mul_cpu.cpp -o matrix_cpu -O2
+./matrix_cpu
+
+**How to Run the HIP GPU Version**
 ### Install HIP & ROCm (For AMD Instinct GPUs)
 ```bash
 sudo apt install rocm-dev
 
 Compile & Run the GPU-Accelerated Code
-hipcc matrix_mul_hip.cpp -o matrix_mul
-./matrix_mul
+hipcc matrix_mul_hip.cpp -o matrix_gpu
+./matrix_gpu
 
 Note:
 
